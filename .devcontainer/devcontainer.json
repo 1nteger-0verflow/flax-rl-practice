@@ -1,5 +1,5 @@
 {
-    "name": "uv-devcontainer",
+    "name": "flax-rl",
     "image": "mcr.microsoft.com/devcontainers/base:trixie",
     "containerEnv": {
         "PYTHONUNBUFFERED": "1",
@@ -32,7 +32,7 @@
     "containerUser": "vscode",
     "remoteUser": "vscode",
     "updateRemoteUserUID": true,
-    "postCreateCommand": "uv sync",
+    "postCreateCommand": "uv sync --extra cuda12",
     "customizations": {
         "vscode": {
             "extensions": [
