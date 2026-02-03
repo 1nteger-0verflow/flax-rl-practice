@@ -138,3 +138,7 @@ def main():
                 break
 
     env.close()
+
+
+if __name__ == "__main__":
+    main()

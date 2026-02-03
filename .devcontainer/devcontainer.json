@@ -17,7 +17,7 @@
             "installOhMyZshConfig": "true"
         },
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-            "packages": "curl,wget,git,ca-certificates,build-essential"
+            "packages": "curl,wget,git,ca-certificates,build-essential,libgl1,libglib2.0-0t64,libxcb1"
         },
         "ghcr.io/va-h/devcontainers-features/uv:1": {
             "shellAutocompletion": true
