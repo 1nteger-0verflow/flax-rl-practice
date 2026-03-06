@@ -72,7 +72,7 @@ class ReplayBuffer:
 
 
 def main():
-    outdir = Path("./out")
+    outdir = Path("/workspaces/flax-rl-practice/results/out")
     rngs = nnx.Rngs(0)
     env = get_atari_env("Breakout-v4", record_folder=outdir / "mp4", record_frequency=100)
     action_dim = int(env.action_space.n)
