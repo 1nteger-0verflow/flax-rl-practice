@@ -121,14 +121,14 @@
                 "tamasfe.even-better-toml",
                 "oderwat.indent-rainbow",
                 "esbenp.prettier-vscode",
-                "yzhang.markdown-all-in-one"
+                "yzhang.markdown-all-in-one",
+                "-anthropic.claude-code",
+                "-dbaeumer.vscode-eslint"
             ]
         }
     },
-    // "initializeCommand": "mkdir -p ${localEnv:HOME}/.claude && touch ${localEnv:HOME}/.claude/CLAUDE.md",
     "mounts": [
-        // "source=shell_history-${devcontainerId},target=/shell_history,type=volume",
-        // "source=${localEnv:HOME}/.claude,target=/home/vscode/.claude,type=bind",
-        // "source=${localEnv:HOME}/.claude/CLAUDE.md,target=/home/vscode/.claude/CLAUDE.md,type=bind"
+        "source=${localEnv:HOME}/.claude,target=/home/vscode/.claude,type=bind",
+        "source=${localEnv:HOME}/.claude/CLAUDE.md,target=/home/vscode/.claude/CLAUDE.md,type=bind"
     ]
 }
